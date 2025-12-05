@@ -19,7 +19,7 @@ class TestPytestDemo:
             "body": "bar",
             "userId": 1
         }
-        # SEND REQUEST
+        # SEND REQUEST OK
         response = requests.post(f"{base_url}/posts", requests_data)
         # ASSERT
         assert response.status_code == 201
