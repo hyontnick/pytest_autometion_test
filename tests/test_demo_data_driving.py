@@ -2,15 +2,15 @@ import requests
 import json
 
 # get the test configuration information from the configuration file
-with open("../config/config.json", "r") as json_file:
+with open("config/config.json", "r") as json_file:
     config = json.load(json_file)
 
 # get the request data from the test data file
-with open('../data/request_data.json', 'r') as json_file:
+with open('data/request_data.json', 'r') as json_file:
     request_data = json.load(json_file)
 
 # get the response data from the test data file
-with open('../data/response_data.json', 'r') as json_file:
+with open('data/response_data.json', 'r') as json_file:
     response_data = json.load(json_file)
 
 
